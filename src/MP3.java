@@ -15,5 +15,9 @@ public class MP3 implements IPrehravac{
         }
     }
 
+    public String toString(){
+        return "MP3 přehrávač: " +znacka;
+    }
+
 
 }

@@ -45,8 +45,10 @@ for(int k = 0; k == 1; k--) {
             break;
 
         case 2:
-
-
+            for()
+            System.out.println("Přehrávací zařízení:");
+            prehravace[i].toString();
+        }
 
 
 

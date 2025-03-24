@@ -15,6 +15,10 @@ public class Smartphone implements IPrehravac{
         }
     }
 
+    public String toString(){
+        return "Smartphone: " +model;
+    }
+
 
 
 
