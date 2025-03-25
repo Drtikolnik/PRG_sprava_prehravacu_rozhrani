@@ -40,7 +40,7 @@ public class Main {
 
             System.out.println("JAKOU AKCI CHCEŠ PROVÉST");
             System.out.println("Zobrazit všechna zařízení (1)");
-            System.out.println("Přehrání (2)"); //index na kterém zařízení má proběhnout
+            System.out.println("Přehrání (2)");
             System.out.println("Zastavení přehrání (3)");
             System.out.println("Přehrát uživatelem specifikovanou písničku (4)");
             int volbaVelka = sc.nextInt();
