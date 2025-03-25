@@ -59,14 +59,23 @@ public class Main {
                     System.out.println("NA JAKÉM ZAŘÍZENÍ CHCEŠ PŘEHRÁNÍ USKUTEČNIT ???");
                     int volbaZarizeni = sc.nextInt();
                     sc.nextLine();
-                    prehravace[volbaZarizeni -1].prehraj(true);
+                    if (volbaZarizeni > prehravace.length || volbaZarizeni < prehravace.length) {
+                        System.out.println("ŠPATNĚ - ZNOVU");
+                    }else{
+                        prehravace[volbaZarizeni -1].prehraj(true);
+                    }
+
                     break;
 
                 case 3:
                     System.out.println("NA JAKÉM ZAŘÍZENÍ CHCEŠ PŘEHRÁNÍ ZASTAVIT ???");
                     int volbaZarizeniZastavit = sc.nextInt();
                     sc.nextLine();
-                    prehravace[volbaZarizeniZastavit -1].prehraj(false);
+                    if (volbaZarizeniZastavit > prehravace.length || volbaZarizeniZastavit < prehravace.length) {
+                        System.out.println("ŠPATNĚ - ZNOVU");
+                    }else{
+                        prehravace[volbaZarizeniZastavit -1].prehraj(false);
+                    }
                     break;
 
                 case 4:
@@ -76,8 +85,17 @@ public class Main {
                     System.out.println("NA JAKÉM ZAŘÍZENÍ CHCEŠ PŘEHRÁNÍ USKUTEČNIT ???");
                     volbaZarizeni = sc.nextInt();
                     sc.nextLine();
-                    prehravace[volbaZarizeni -1].prehraj(true);
-                    prehravace[volbaZarizeni -1].prehraj(pisnicka);
+                    if (volbaZarizeni > prehravace.length || volbaZarizeni < prehravace.length) {
+                        System.out.println("ŠPATNĚ - ZNOVU");
+                    }else{
+                        prehravace[volbaZarizeni -1].prehraj(true);
+                        prehravace[volbaZarizeni -1].prehraj(pisnicka);
+                    }
+
+                    break;
+
+                default:
+                    System.out.println("ŠPATNĚ - ZADEJ ZNOVU");
                     break;
 
 
