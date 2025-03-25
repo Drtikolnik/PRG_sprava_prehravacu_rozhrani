@@ -1,8 +1,8 @@
 public interface IPrehravac {
 
     public void prehraj(boolean hraj);
-    public default void prehraj(String nazevPisnicky){
-        System.out.println("Pro zatím není možné vybírat konkretní písničky");
+    public default void prehraj(String pisnicka){
+        System.out.println("Právě se přehrává: " +pisnicka);
     }
 
 }

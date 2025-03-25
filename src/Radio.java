@@ -6,6 +6,8 @@ public class Radio implements IPrehravac{
     //    this.model = model;
     //}
 
+    private String pisnicka;
+
     @Override
     public void prehraj(boolean hraj){
         if(hraj){

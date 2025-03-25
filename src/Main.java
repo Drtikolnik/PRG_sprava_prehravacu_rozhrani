@@ -51,20 +51,42 @@ public class Main {
                     System.out.println("Přehrávací zařízení:");
 
                     for (int u = 0; u < prehravace.length; u++) {
-                        prehravace[u].toString();
+                        System.out.println( (u+1) + ". Zařízení: " +prehravace[u].toString());
                     }
                     break;
 
+                case 2:
+                    System.out.println("NA JAKÉM ZAŘÍZENÍ CHCEŠ PŘEHRÁNÍ USKUTEČNIT ???");
+                    int volbaZarizeni = sc.nextInt();
+                    sc.nextLine();
+                    prehravace[volbaZarizeni -1].prehraj(true);
+                    break;
+
+                case 3:
+                    System.out.println("NA JAKÉM ZAŘÍZENÍ CHCEŠ PŘEHRÁNÍ ZASTAVIT ???");
+                    int volbaZarizeniZastavit = sc.nextInt();
+                    sc.nextLine();
+                    prehravace[volbaZarizeniZastavit -1].prehraj(false);
+                    break;
+
+                case 4:
+                    System.out.println("SPECIFIKUJ PÍSNIČKU");
+                    String pisnicka = sc.nextLine();
+
+                    System.out.println("NA JAKÉM ZAŘÍZENÍ CHCEŠ PŘEHRÁNÍ USKUTEČNIT ???");
+                    volbaZarizeni = sc.nextInt();
+                    sc.nextLine();
+                    prehravace[volbaZarizeni -1].prehraj(true);
+                    prehravace[volbaZarizeni -1].prehraj(pisnicka);
+                    break;
+
+
+
+
+
             }
+
         }
-
-
-        //IPrehravac[] zarizeni = new IPrehravac[3];
-        //zarizeni[0] = new MP3("Lenbovo");
-        //zarizeni[1] = new Smartphone("X69-a");
-        //zarizeni[2] = new Radio();
-        //MP3 mp3 = new MP3(znacka)
-        //prehravace[i] = mp3
 
 
     }

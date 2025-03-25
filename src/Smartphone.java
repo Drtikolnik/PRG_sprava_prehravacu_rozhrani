@@ -1,6 +1,7 @@
 public class Smartphone implements IPrehravac{
 
     private String model;
+    private String pisnicka;
 
     public Smartphone(String model) {
         this.model = model;

@@ -1,6 +1,7 @@
 public class MP3 implements IPrehravac{
 
     private String znacka;
+    private String pisnicka;
 
     public MP3(String znacka) {
         this.znacka = znacka;
